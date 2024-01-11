@@ -17,8 +17,8 @@ module.exports = function(RED) {
     // console.log(this.server.vid);
 
     try {
-      console.log("First Try");
-      console.log(this.server.vid);
+      // console.log("First Try");
+      // console.log(this.server.vid);
 
 
       var hexvid = parseInt(this.server.vid, 10);
@@ -28,7 +28,7 @@ module.exports = function(RED) {
 
       //var device = new HID.HID(0x5E0, 0x600);
 
-      console.log("Second Try");
+      // console.log("Second Try");
 
       this.status({
         fill: "green",
