@@ -14,7 +14,6 @@ module.exports = function(RED) {
 
     this.server = RED.nodes.getNode(config.connection);
 
-    // console.log(this.server.vid);
 
     try {
 
