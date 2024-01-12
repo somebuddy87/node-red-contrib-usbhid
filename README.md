@@ -83,4 +83,4 @@ Your nodejs / nodered has now FULL ACCESS !! to you usb devides. Feel free to ad
 
 ## How to Use
 
-
+Leverage this [Flow](https://flows.nodered.org/flow/3e08565bc0e024e81325dc028c5da792) to get started.
