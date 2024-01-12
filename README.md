@@ -23,7 +23,24 @@ Platforms we pre-build binaries for:
 - Linux Debian/Ubuntu x64: v4.2.x
 - Raspberry Pi arm: v4.2.x
 
-## How to Use
+## How to Install on Windows
+
+This package works natively with Windows.
+
+Manual installation is the current way to get the node.  It will be added to the pallette manager in the future.
+
+### Install from source
+From github:
+Navigate to the your home directory on linux and windows it is typically ~/.node-red/node-modules
+```powershell
+git clone https://github.com/gdziuba/node-red-contrib-usbhid.git
+```
+```powershell
+cd node-red-contrib-usbhid
+npm install
+```
+
+## How to Install on Linux
 
 ### HID ( USB ) read/write access for non root users ( in my case for user pi on an raspberry pi 2 running nodered )
 
@@ -62,3 +79,8 @@ udevadm control --reload-rules
 
 Reboot your machine for the rules to take effect.
 Your nodejs / nodered has now FULL ACCESS !! to you usb devides. Feel free to adjust the permissions to fit your needs.
+
+
+## How to Use
+
+Leverage this [Flow](https://flows.nodered.org/flow/3e08565bc0e024e81325dc028c5da792) to get started.
