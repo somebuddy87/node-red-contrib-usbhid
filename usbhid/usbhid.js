@@ -26,7 +26,6 @@ module.exports = function(RED) {
 
       //var device = new HID.HID(0x5E0, 0x600);
 
-      // console.log("Second Try");
 
       this.status({
         fill: "green",
