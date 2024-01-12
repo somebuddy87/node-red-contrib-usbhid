@@ -33,7 +33,8 @@ Manual installation is the current way to get the node.  It will be added to the
 From github:
 Navigate to the your home directory on linux and windows it is typically ~/.node-red/node-modules
 ```powershell
-git clone https://github.com/gdziuba/node-red-contrib-usbhid.git
+git clone https://github.com/somebuddy87/node-red-contrib-usbhid
+
 ```
 ```powershell
 cd node-red-contrib-usbhid
