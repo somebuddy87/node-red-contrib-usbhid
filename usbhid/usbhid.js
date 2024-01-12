@@ -17,8 +17,6 @@ module.exports = function(RED) {
     // console.log(this.server.vid);
 
     try {
-      // console.log("First Try");
-      // console.log(this.server.vid);
 
 
       var hexvid = parseInt(this.server.vid, 10);
