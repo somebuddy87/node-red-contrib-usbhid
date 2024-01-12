@@ -6,7 +6,6 @@ module.exports = function(RED) {
     RED.nodes.createNode(this, n);
     this.vid = n.vid;
     this.pid = n.pid;
-    // console.log(this.vid);
   }
 
   function usbHIDNode(config) {
