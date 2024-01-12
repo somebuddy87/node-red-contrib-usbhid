@@ -6,7 +6,6 @@ module.exports = function(RED) {
     RED.nodes.createNode(this, n);
     this.vid = n.vid;
     this.pid = n.pid;
-
   }
 
   function usbHIDNode(config) {
@@ -14,8 +13,17 @@ module.exports = function(RED) {
 
     this.server = RED.nodes.getNode(config.connection);
 
+
     try {
-      var device = new HID.HID(this.server.vid, this.server.pid);
+
+
+      var hexvid = parseInt(this.server.vid, 10);
+      var hexpid = parseInt(this.server.pid, 10); 
+
+      var device = new HID.HID(hexvid, hexpid);
+
+      //var device = new HID.HID(0x5E0, 0x600);
+
 
       this.status({
         fill: "green",
